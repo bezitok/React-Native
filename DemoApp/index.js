@@ -13,8 +13,13 @@ import {
 class DemoApp extends Component {
     render(){
         return(
-            <View style = {styles.maunen}>
-                <Text style = {styles.mauchu}>Nếu đang yêu nhau chỉ cần, nhìn mưa sẽ nhớ nhau hơn. Thế nhưng sao lại sợ, giọt mưa thấm đẫm cô đơn</Text>
+            <View style = {styles.container}>
+                <View style = {styles.view1}>
+                    <Text style = {styles.mauchu1}>Manchester</Text>
+                </View>
+                <View style = {styles.view2}>
+                    <Text style = {styles.mauchu2}>united</Text>
+                </View>
             </View>
         );
     }
@@ -23,11 +28,27 @@ class DemoApp extends Component {
 AppRegistry.registerComponent('DemoApp', () => DemoApp);
 
 var styles = StyleSheet.create({
-    mauchu: {
-        color: 'blue', textAlign: 'center', fontSize: 30
+    container: {
+        backgroundColor: 'orange',
+        flex: 1,
+        flexDirection: 'row'
     },
-    maunen: {
-        backgroundColor: '#E34F1B',
+    view1: {
+        backgroundColor: 'black',
         flex: 1
+    },
+    view2: {
+        backgroundColor: 'red',
+        flex: 1
+    },
+    mauchu1: {
+        textAlign: 'center',
+        fontSize: 25,
+        color: 'white'
+    },
+    mauchu2: {
+        textAlign: 'center',
+        fontSize: 25,
+        color: 'black'
     }
 })
