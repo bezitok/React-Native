@@ -15,6 +15,7 @@ class SublimeTextDemo extends Component {
 		return(
 			<View style = {styles.maunen}>
 				<Text style = {styles.mauchu}>Sau đây tôi xin test Github</Text>
+				<Text style = {styles.mauchu}>Còn nhiều điều thú vị lắm nè</Text>
 			</View>
 		);
 	}
