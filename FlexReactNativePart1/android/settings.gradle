@@ -1,0 +1,3 @@
+rootProject.name = 'FlexReactNativePart1'
+
+include ':app'
